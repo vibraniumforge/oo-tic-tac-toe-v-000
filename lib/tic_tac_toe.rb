@@ -97,7 +97,7 @@ end
 
 def full?
   @board.each_with_index do |item, index|
-    if position_taken?(@board, index)==false
+    if position_taken?(index)==false
       return false
     end
   end
