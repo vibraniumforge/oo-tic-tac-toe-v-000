@@ -112,8 +112,8 @@ def draw?
   # elsif won?(board)==true
   #   return false
   # end
-  won=won?(@board)
-  full=full?(@board)
+  won=won?
+  full=full?
   if won==false && full==true
     return true
   elsif won==false && full==false
@@ -126,12 +126,12 @@ def draw?
 end
 
 def over?
-  draw?(@board)|| won?(@board)
+  draw?|| won?
 end
 
 def winner
-  if won?(@board)
-    z=@board[won?(@board)[0]]
+  if won?
+    z=@board[won?[0]]
     return z
   end
 end
