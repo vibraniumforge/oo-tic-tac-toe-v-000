@@ -129,7 +129,7 @@ def over?
   draw?|| won?
 end
 
-def winner
+def winner(board)
   if won?
     z=@board[won?[0]]
     return z
