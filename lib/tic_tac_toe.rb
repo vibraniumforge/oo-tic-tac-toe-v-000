@@ -64,15 +64,15 @@ def turn
   input = gets.strip
   index=input_to_index(input)
   if valid_move?(@board, index)
-    move(board, index, character)
-    display_board(board)
+    move(@board, index, character)
+    display_board(@board)
   else
-    turn(board)
+    turn(@board)
   end
 end
 
 def turn_count
-  board.count{|token| token == "X" || token == "O"}
+  @board.count{|token| token == "X" || token == "O"}
 end
 
 def current_player
