@@ -43,7 +43,7 @@ def move(index, character="X")
   @board[index]=character
 end
 
-def position_taken?(board, index)
+def position_taken?(index)
     if @board[index] ==" "
       return false
     else
@@ -51,7 +51,7 @@ def position_taken?(board, index)
     end
 end
 
-def valid_move?(board, index)
+def valid_move?( index)
   if index.between?(0,8) && !position_taken?(@board, index)
     return true
   else
