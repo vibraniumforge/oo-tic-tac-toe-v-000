@@ -19,7 +19,7 @@ def play
   while !over?
     turn
   end
-  if won?
+  if won?(@board)
     puts "Congratulations #{winner(@board)}!"
   elsif draw?
     puts "Cat's Game!"
