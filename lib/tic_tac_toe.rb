@@ -133,8 +133,8 @@ def over?
 end
 
 def winner
-  if won?(board)
-    z=board[won?(board)[0]]
+  if won?(@board)
+    z=@board[won?(@board)[0]]
     return z
   end
 end
