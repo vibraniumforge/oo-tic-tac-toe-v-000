@@ -129,7 +129,7 @@ def draw?
 end
 
 def over?
-  draw?(board)|| won?(board)
+  draw?(@board)|| won?(@board)
 end
 
 def winner
