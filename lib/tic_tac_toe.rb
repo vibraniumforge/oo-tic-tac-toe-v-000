@@ -16,12 +16,12 @@ class TicTacToe
 ]
 
 def play
-  while !over?(@board)
-    turn(@board)
+  while !over?
+    turn
   end
-  if won?(@board)
+  if won?
     puts "Congratulations #{winner(board)}!"
-  elsif draw?(@board)
+  elsif draw?
     puts "Cat's Game!"
   end
 end
