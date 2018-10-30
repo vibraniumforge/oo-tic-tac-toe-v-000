@@ -131,7 +131,9 @@ end
 
 def winner
   if won?
-    @board[0]
+    # z=@board[won?[0]]
+    # return z
+    return win_combination[0]
   end
 end
 
