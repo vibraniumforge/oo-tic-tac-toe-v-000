@@ -63,7 +63,7 @@ def turn
   puts "Please choose a square 1-9"
   input = gets.strip
   index=input_to_index(input)
-  if valid_move?(board, index)
+  if valid_move?(@board, index)
     move(board, index, character)
     display_board(board)
   else
