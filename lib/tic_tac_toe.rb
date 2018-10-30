@@ -131,7 +131,7 @@ end
 
 def winner
   if won?
-    z=@board[won?[0]]
+    z=@board[0]
     return z
   end
 end
