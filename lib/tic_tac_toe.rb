@@ -88,10 +88,7 @@ def won?
     position_1=@board[win_index_1]
     position_2=@board[win_index_2]
     position_3=@board[win_index_3]
-    puts "won? fires"
     if position_1==position_2 && position_2==position_3 && position_1 !=" "
-      puts"won? true fires"
-      puts win_combination
       return win_combination
     end
   end
